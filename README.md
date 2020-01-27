@@ -5,9 +5,9 @@ Before implementing this system I used to control the DC wirelessly with "PSI Wo
 
 I used Servo Shield powered by separate 8A power supply for the Servos, and I used CAT 5e network cable to wire the push buttons and the Servos to the Arduino.
 
-In the beginning of using the system the servo driver/shield MOSFET burnt out when I connect all the servos because is not designed for continuous power for more than 3 parallel servos, and the solution was to bypass it. (attached)
+In the beginning of using the system the servo driver/shield MOSFET burnt out when I connect all the servos because its not designed for continuous power for more than 3 parallel servos, and the solution was to bypass it. (attached)
 
-And also there was an issue where the some servos will become warm because the power is constantly provided to them and the Arduino trying keep each gate at the exact set angle while that is difficult to be done in such application, and this has been fixed by adding a relay to disconnect the power to the Shield after executing the command.
+And also there was an issue where the some servos will become warm and draw current when idle because the power is constantly provided to them and the Arduino trying keep each gate at the exact set angle while that is difficult to be done in such application, and this has been fixed by adding a relay to disconnect the power to the Shield after executing the command.
 
 The 3D printed servo mount has a place for a micro limit switch wired to green & red LEDs to indicate the gate status physically
 
